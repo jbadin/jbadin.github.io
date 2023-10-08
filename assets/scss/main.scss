@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    .header_top {
+        background-image: url("../img/wave_header.svg");
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 1rem;
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+    }
+
+    .header_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: 'Mooli', sans-serif;
+        }
+
+        h1,
+        p {
+            margin: 5px;
+        }
+
+        .header_socialNetworks {
+            margin-top: 1rem;
+
+            .fa-circle {
+                color: #003b6f;
+            }
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+    .introduction {
+        border-radius: 5px;
+        background-color: #003b6f;
+        color: #ffffff;
+        padding: 0.2rem 1.5rem;
+        width: 80%;
+
+        .fa-ul {
+            li {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px dashed #ffffff;
+                }
+            }
+        }
+    }
+
+    section {
+        margin-top: 5rem;
+        width: 80%;
+
+        h2 {
+            text-align: center;
+        }
+
+        .skills_cardsContainer {
+            .skills_card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: -20px;
+
+                .skillsType {
+                    background-color: #003b6f;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 110px;
+                    position: relative;
+                    top: 55px;
+                    width: 110px;
+                }
+
+                .skills_cardContent {
+                    border: 1px solid #003b6f;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    justify-content: center;
+                    padding: 5rem 2rem 2rem 2rem;
+                    width: 80%;
+
+                    img {
+                        display: flex;
+                        align-self: center;
+                        justify-self: center;
+                        width: 75px;
+                    }
+                }
+            }
+        }
+
+        .timeline_container {
+
+
+            .timeline_bar {
+                background-color: black;
+                height: 900px;
+                position: relative;
+                left: 20px;
+                width: 2px;
+            }
+
+            .timeline_bubbles {
+                background-color: #003b6f;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                color: #ffffff;
+                justify-content: center;
+                height: 40px;
+                position: relative;
+                left: 1px;
+                top: -890px;
+                width: 40px;
+            }
+
+            .timeline_job {
+                background-color: #ffffff;
+                border: 1px solid #003b6f;
+                border-radius: 5px;
+                position: relative;
+                top: -890px;
+                padding: 0.5rem;
+                width: 90%;
+                margin-bottom: 20px;
+                .timeline_job_date {
+                    background-color: lightgray;
+                    border-radius: 5px;
+                    margin: 0;
+                    padding: 0.3rem;
+                    width: fit-content;
+                }
+
+                .timeline_job_title {
+                    font-weight: bold;
+                }
+            }
+
+            .left {
+                left: 50px;
+            }
+
+            .right {
+                left: 50px;
+            }
+        }
+    }
+}
