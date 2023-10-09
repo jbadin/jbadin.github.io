@@ -16,12 +16,12 @@ function timelineResize(startSize = 0) {
     let timelineBar = document.querySelector('.timeline_bar')
     let timelineJob = document.getElementsByClassName('timeline_job');
     for (let jobs of timelineJob) {
-        size += jobs.offsetHeight + 50
+        size += jobs.offsetHeight + 70
     }
     timelineBar.style.height = size + 'px'
 }
 
-timelineResize(100);
+timelineResize(240);
 
 window.onresize = () => {
     timelineResize();
