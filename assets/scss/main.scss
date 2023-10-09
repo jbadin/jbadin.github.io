@@ -130,59 +130,62 @@ header {
             }
         }
 
-        .timeline_container {
+        &.timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+            .timeline_container {
+                .timeline_bar {
+                    background-color: black;
+                    position: relative;
+                    left: 0px;
+                    width: 2px;
+                }
 
+                .timeline_bubbles {
+                    background-color: #003b6f;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    color: #ffffff;
+                    justify-content: center;
+                    height: 40px;
+                    position: relative;
+                    left: -19px;
+                    width: 40px;
+                }
 
-            .timeline_bar {
-                background-color: black;
-                height: 900px;
-                position: relative;
-                left: 20px;
-                width: 2px;
-            }
-
-            .timeline_bubbles {
-                background-color: #003b6f;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                color: #ffffff;
-                justify-content: center;
-                height: 40px;
-                position: relative;
-                left: 1px;
-                top: -890px;
-                width: 40px;
-            }
-
-            .timeline_job {
-                background-color: #ffffff;
-                border: 1px solid #003b6f;
-                border-radius: 5px;
-                position: relative;
-                top: -890px;
-                padding: 0.5rem;
-                width: 90%;
-                margin-bottom: 20px;
-                .timeline_job_date {
-                    background-color: lightgray;
+                .timeline_job {
+                    background-color: #ffffff;
+                    border: 1px solid #003b6f;
                     border-radius: 5px;
-                    margin: 0;
-                    padding: 0.3rem;
-                    width: fit-content;
+                    position: relative;
+                    padding: 0.5rem;
+                    width: 90%;
+                    margin-bottom: 20px;
+
+                    .timeline_job_date {
+                        background-color: lightgray;
+                        border-radius: 5px;
+                        margin: 0;
+                        padding: 0.3rem;
+                        width: fit-content;
+                    }
+
+                    .timeline_job_title {
+                        font-weight: bold;
+                    }
                 }
 
-                .timeline_job_title {
-                    font-weight: bold;
+                .left {
+                    left: 30px;
                 }
-            }
 
-            .left {
-                left: 50px;
-            }
-
-            .right {
-                left: 50px;
+                .right {
+                    left: 30px;
+                }
             }
         }
     }
