@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Shrikhand&display=swap");
+body {
+  background-color: #EFE5D7;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header #nameContainer {
+  background-color: #F2F2F2;
+  border-radius: 30% 70% 70% 30%/30% 54% 46% 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+}
+body header #nameContainer #firstname {
+  font-family: "Pacifico", cursive;
+  font-size: 1.7rem;
+}
+body header #nameContainer #firstname #star {
+  color: #E2B8E4;
+}
+body header #nameContainer #lastname {
+  font-family: "Shrikhand", serif;
+  font-size: 2.7rem;
+}
+body header #nameContainer #lastname .ln-1 {
+  color: #F4AEC0;
+}
+body header #nameContainer #lastname .ln-2 {
+  color: #F5C75C;
+}
+body header #nameContainer #lastname .ln-3 {
+  color: #8BCFCD;
+}
+body header #nameContainer #lastname .ln-4 {
+  color: #F1A26B;
+}
+body header #nameContainer #lastname .ln-5 {
+  color: #F484AC;
+}/*# sourceMappingURL=main.min.css.map */

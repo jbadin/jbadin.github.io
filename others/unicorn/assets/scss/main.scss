@@ -1,0 +1,52 @@
+@import 'variables';
+
+
+
+
+body {
+    background-color: $color-a;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #nameContainer {
+            background-color: $color-b;
+            border-radius: 30% 70% 70% 30% / 30% 54% 46% 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            #firstname {
+                font-family: $pacifico;
+                font-size: 1.7rem;
+                #star {
+                    color: $color-g;
+                
+                }
+            }
+            #lastname {
+                font-family: $shrikhand;
+                font-size: 2.7rem;
+
+                .ln-1 {
+                    color: $color-c;
+                }
+                .ln-2 {
+                    color: $color-f;
+                }
+                .ln-3 {
+                    color: $color-d
+                }
+                .ln-4 {
+                    color: $color-h;
+                }
+                .ln-5 {
+                    color: $color-i;
+                }
+            }
+        }
+    }
+}
