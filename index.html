@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <div class="header_top">
+        <div class="header_top" id="top">
             <img src="assets/img/avatar.png" alt="avatar">
         </div>
         <div class="header_bottom">
@@ -37,24 +37,26 @@
                     <i class="fa-solid fa-file-arrow-down socialNetworks"></i>
                 </div>
             </div>
+            
+            <div class="introduction">
+                <ul class="introduction_list fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>Hauts-de-france</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-car-side"></i></span>Permis B</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>jbadin.dev@gmail.com</li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <div class="content">
-        <div class="introduction">
-            <ul class="introduction_list fa-ul">
-                <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>Hauts-de-france</li>
-                <li><span class="fa-li"><i class="fa-solid fa-car-side"></i></span>Permis B</li>
-                <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>jbadin.dev@gmail.com</li>
-            </ul>
-        </div>
-        <section id="profils">
+
+        <section class="profiles">
             <div class="titles">
                 <h2>Mes profils</h2>
             </div>
 
             <div class="job">
-                <img src="./assets/img/dev.png" alt="illustration dev">
+                <img src="./assets/img/dev.png" alt="illustration dev" class="img_left">
                 <div>
                     <h3>Développeuse</h3>
                     <p>
@@ -97,11 +99,11 @@
                         mener un maximum d'élèves à la réussite de leur formation dans la meilleure ambiance possible.
                     </p>
                 </div>
-                <img src="./assets/img/teacher.png" alt="illustration dev">
+                <img src="./assets/img/teacher.png" alt="illustration dev"  class="img_right">
             </div>
 
             <div class="job">
-                <img src="./assets/img/writer.png" alt="illustration écrivaine">
+                <img src="./assets/img/writer.png" alt="illustration écrivaine"  class="img_left">
                 <div>
                     <h3>Rédactrice / Évcrivaine</h3>
                     <p>
@@ -116,7 +118,6 @@
             </div>
 
         </section>
-
 
         <section class="skills">
             <h2>Compétences</h2>
@@ -171,9 +172,10 @@
 
         <section class="projects">
             <h2>Projets</h2>
+            <div class="projects_container">
             <div class="project_card">
                 <div class="project_card_body">
-                    <div class="projetc_card_title">
+                    <div class="project_card_title">
                         <h3>Template Blog en Anglais</h3>
                     </div>
 
@@ -218,71 +220,97 @@
                 </div>
             </div>
 
+        </div>
+
         </section>
 
         <section class="timeline">
             <h2>Parcours</h2>
             <div class="timeline_container">
-                <div class="timeline_bar"></div>
-                <div class="timeline_content">
-                    <div class="timeline_bubbles"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div class="timeline_job right">
-                        <p class="timeline_job_header">
-                            <span class="timeline_job_date">2023 - 2024</span>
-                            <span class="timeline_job_title">Certification Le Robert</span> -
-                            <span class="timeline_job_company">The Artist Academy</span> (Obtenue)
-                        </p>
+                <div class="timeline-tile education">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-title"><span class="badge">Certification Le Robert - The Artist
+                                Academy</span></p>
+                        <p class="timeline-subtitle">2023 - 2024</p>
                         <p>
                             Atteste de la maîtrise de la langue française. Cette certification est reconnue par l'Etat
                             et
                             permet de justifier d'un niveau de langue C2.
                         </p>
                     </div>
-                    <div class="timeline_bubbles"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div class="timeline_job left">
-                        <p class="timeline_job_header">
-                            <span class="timeline_job_date">2023 - 2024</span>
-                            <span class="timeline_job_title">Maîtrise des écrits en langue française</span> -
-                            <span class="timeline_job_company">The Artist Academy</span>
-                        </p>
+                </div>
+                <div class="timeline-tile education">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-title"><span class="badge">Maîtrise des écrits en langue française - The
+                                Artist
+                                Academy</span></p>
+                        <p class="timeline-subtitle">2023 - 2024</p>
                         <p>
                             Formation d'écriture créative. Coachée par des auteurs de renom, je me suis formée à
-                            l'écriture
-                            d'une oeuve littéraire complète à travers des exercices et des ateliers. J'ai pu découvrir
-                            les
-                            différents genres littéraires et leurs codes, ainsi que les techniques d'écriture.
+                            l'écriture d'une oeuve littéraire complète à travers des exercices et des ateliers. J'ai pu
+                            découvrir les différents genres littéraires et leurs codes, ainsi que les techniques
+                            d'écriture.
                         </p>
                     </div>
-                    <div class="timeline_bubbles"><i class="fa-solid fa-briefcase"></i></div>
-                    <div class="timeline_job right">
-                        <p class="timeline_job_header">
-                            <span class="timeline_job_date">2016 - aujourd'hui</span>
-                            <span class="timeline_job_title">Formatrice</span> -
-                            <span class="timeline_job_company">La Manu</span>
-                        </p>
+                </div>
+                <div class="timeline-tile work">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-title"><span class="badge">Formatrice - La Manu</span></h4>
+                        <p class="timeline-subtitle">2016 - 2024</p>
                         <p>
                             Anciennement E2N, La Manu est une école de développement web et mobile. J'y suis formatrice
                             depuis 2016. J'enseigne le développement web et mobile, ainsi que les bases de données et le
                             développement d'API. J'encadre également les projets de fin de formation.
                         </p>
                     </div>
-                    <div class="timeline_bubbles"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div class="timeline_job left">
-                        <p class="timeline_job_header">
-                            <span class="timeline_job_date">2015 - 2016</span>
-                            <span class="timeline_job_title">Titre Professionnel Développeur Logiciel</span> -
-                            <span class="timeline_job_company">AFPA</span> (Obtenu)
+                </div>
+                <div class="timeline-tile work">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-title"><span class="badge">Développeuse Colibri Agency</span></h4>
+                        <p class="timeline-subtitle">2015 - 2016</p>
+                        <p>
+                            Développement d'un CRM pour l'entreprise Colibri Agency de la conception du projet au
+                            développement des composants d'accès à la base de données.
                         </p>
+                    </div>
+                </div>
+                <div class="timeline-tile education">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-title"><span class="badge">Titre Professionnel Développeur Logiciel -
+                                AFPA</span></p>
+                        <p class="timeline-subtitle">2015 - 2016</p>
                         <p>
                             Formation de développeur logiciel. J'ai pu y apprendre les bases du développement web et
-                            mobile,
-                            ainsi que les bases de données et le développement d'API.
+                            mobile, ainsi que les bases de données et le développement d'API.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <footer>
+        <p>
+            Johanne Badin<br>
+            Développeuse web - Formatrice - Rédactrice
+        </p>
+        <a href="#top">Retour en haut</a>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 

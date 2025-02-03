@@ -1,0 +1,97 @@
+$work: #AF97C3;
+$education: #FF99BD;
+
+.timeline_container {
+    margin: 0 0 0 30px;
+    padding-left: 4rem;
+    position: relative;
+
+
+    &:before {
+        content: '';
+        background: #F5F2F8;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 4px;
+    }
+
+    .timeline-tile {
+        background-color: #F5F2F8;
+        position: relative;
+        margin-bottom: 2.5rem;;
+
+        .timeline-icon {
+            color: white;
+            position: absolute;
+            left: -88px;
+            top: 4px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+
+            i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+       
+        }
+
+        .timeline-body {
+            border-radius: 5px;
+            padding: 20px 20px 15px;
+
+            &:before {
+                content: '';
+                background-color: #F5F2F8;
+                width: 20px;
+                height: 20px;
+                display: block;
+                position: absolute;
+                left: -10px;
+                transform: rotate(45deg);
+                border-radius: 0 0 0 2px;
+            }
+
+            .timeline-title {
+
+                .badge {
+                    color: #16262E;
+                    padding: 4px 8px;
+                    border-radius: 3px;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+
+            .timeline-subtitle {
+                color: #16262E;
+                font-weight: 300;
+                font-style: italic;
+                opacity: .7;
+                font-size: 11px;
+            }
+        }
+
+        &.work {
+            .badge,
+            .timeline-icon {
+                background: $work;
+            }
+        }
+
+        &.education {
+            .badge,
+            .timeline-icon {
+                background: $education;
+            }
+        }
+
+    }
+}
