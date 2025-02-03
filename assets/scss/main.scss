@@ -1,5 +1,11 @@
+$dark: #16262E;
+$light: #F5F2F8;
+$primary: #AF97C3;
+$secondary: #F0DBF3;
+$highlight: #FFADCA;
+
 body {
-    color: #16262E;
+    color: $dark;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -11,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #F0DBF3;
+    background-color: $secondary;
     padding-bottom: 1rem;
 
     .header_top {
@@ -50,8 +56,8 @@ header {
             gap: 1rem;
 
             .header_socialNetworks_bubbles {
-                background-color: #AF97C3;
-                color: #ffffff;
+                background-color: $primary;
+                color: white;
                 font-size: 2rem;
                 height: 60px;
                 width: 60px;
@@ -65,8 +71,8 @@ header {
 
     .introduction {
         border-radius: 5px;
-        background-color: #AF97C3;
-        color: #ffffff;
+        background-color: $primary;
+        color: white;
         margin-top: 1rem;
         padding: 0.2rem 1.5rem;
         width: 40%;
@@ -77,7 +83,7 @@ header {
                 padding-bottom: 0.5rem;
 
                 &:not(:last-child) {
-                    border-bottom: 1px dashed #ffffff;
+                    border-bottom: 1px dashed white;
                 }
             }
         }
@@ -107,24 +113,24 @@ header {
 
 h2 {
     padding: 0.5rem 1rem;
-    color: #ffffff;
+    color: white;
     border-radius: 0.8em 0.3em;
     background: transparent;
-background-color: #FF99BD;
+background-color: $highlight;
     box-decoration-break: clone;
 
 }
 
 footer {
-    background-color: #16262E;
-    color:#ffffff;
+    background-color: $dark;
+    color:white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     a {
-        color: #ffffff;
+        color: white;
     }
 }
 

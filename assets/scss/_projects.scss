@@ -1,5 +1,5 @@
 .projects {
-    background-color: #F5F2F8;
+    background-color: $light;
     .projects_container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -7,7 +7,7 @@
 
         .project_card {
             border-radius: 5px;
-            border: 1px solid #AF97C3;
+            border: 1px solid $primary;
             margin-bottom: 0.5rem;
 
             .project_card_body {
@@ -27,17 +27,17 @@
 
 
                 .project_card_cta {
-                    background-color: #AF97C3;
+                    background-color: $primary;
                     border-radius: 5px;
-                    color: #ffffff;
+                    color: white;
                     padding: 0.5rem 1rem;
                     text-decoration: none;
                     transition: all 0.3s ease-in-out;
       
                     &:hover {
-                        background-color: #ffffff;
-                        border: 1px solid #AF97C3;
-                        color: #AF97C3;
+                        background-color: white;
+                        border: 1px solid $primary;
+                        color: $primary;
                     }
                 }
             }

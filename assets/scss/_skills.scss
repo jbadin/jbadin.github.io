@@ -14,11 +14,11 @@
         height: 100%;
 
         .skillsType {
-            border: 1px solid #AF97C3;
-            background-color: #AF97C3;
+            border: 1px solid $primary;
+            background-color: $primary;
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
-            color: #ffffff;
+            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -27,7 +27,7 @@
         }
 
         .skills_cardContent {
-            border: 1px solid #AF97C3;
+            border: 1px solid $primary;
             border-bottom-right-radius: 5px;
             border-bottom-left-radius: 5px;
 

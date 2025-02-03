@@ -1,5 +1,5 @@
-$work: #AF97C3;
-$education: #FF99BD;
+$work: $primary;
+$education: $highlight;
 
 .timeline_container {
     margin: 0 0 0 30px;
@@ -9,7 +9,7 @@ $education: #FF99BD;
 
     &:before {
         content: '';
-        background: #F5F2F8;
+        background: $light;
         position: absolute;
         left: 0;
         top: 0;
@@ -18,7 +18,7 @@ $education: #FF99BD;
     }
 
     .timeline-tile {
-        background-color: #F5F2F8;
+        background-color: $light;
         position: relative;
         margin-bottom: 2.5rem;;
 
@@ -49,7 +49,7 @@ $education: #FF99BD;
 
             &:before {
                 content: '';
-                background-color: #F5F2F8;
+                background-color: $light;
                 width: 20px;
                 height: 20px;
                 display: block;
@@ -62,7 +62,7 @@ $education: #FF99BD;
             .timeline-title {
 
                 .badge {
-                    color: #16262E;
+                    color: $dark;
                     padding: 4px 8px;
                     border-radius: 3px;
                     font-size: 12px;
@@ -71,7 +71,7 @@ $education: #FF99BD;
             }
 
             .timeline-subtitle {
-                color: #16262E;
+                color: $dark;
                 font-weight: 300;
                 font-style: italic;
                 opacity: .7;
