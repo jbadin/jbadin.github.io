@@ -49,9 +49,11 @@ header {
         }
 
         .header_socialNetworks {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            @media screen  and (max-width: 445px) {
+                grid-template-columns: repeat(3,1fr);
+            }
             margin-top: 1rem;
             gap: 1rem;
 
